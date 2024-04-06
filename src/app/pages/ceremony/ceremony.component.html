@@ -1,0 +1,21 @@
+<app-breadcrumb [title]="'Ceremony'" [breadcrumb]="'Ceremony'"></app-breadcrumb>
+
+<section class="banner-furniture absolute_banner ratio3_2">
+    <div class="container">
+        <div class="row partition3">
+            <ng-container *ngFor="let ceremony of ceremonys">
+                <div class="col-md-4">
+                    <a routerLink="{{ceremony.link}}" [queryParams]="{ category: 'shoes'}">
+                        <div class="collection-banner p-left text-left">
+                            <img src="{{ceremony.imgPath}}" alt="" class="img-fluid">
+                            <div class="absolute-contain">
+                                <h3>{{ceremony.heading}}</h3>
+                                <h4>{{ceremony.subHeading}}</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</section>

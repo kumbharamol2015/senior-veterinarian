@@ -1,0 +1,27 @@
+.heading-logo{
+    padding-top: 15px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #777777;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+}
+.header-contact{
+    margin-top: 4px;
+}
+.img-logo-fluid{
+    height: 50px;
+    width: auto;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-and-content{
+    display: flex;
+    align-items: center;
+  }
+  .brand-logo {
+    margin-right: 10px; 
+  }

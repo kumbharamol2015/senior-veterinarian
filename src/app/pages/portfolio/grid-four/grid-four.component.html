@@ -1,0 +1,32 @@
+<app-breadcrumb [title]="'Gallary'" [breadcrumb]="'Gallary'"></app-breadcrumb>
+<!-- Our Project Start -->
+<section class="portfolio-section grid-portfolio">
+    <div class="container">
+        <div align="center" id="form1">
+            <!-- <button class="filter-button project_button" [class.active]="galleryFilter == 'all'" (click)="filter('all')">All</button> -->
+            <button class="filter-button project_button" [class.active]="galleryFilter == 'annual'" (click)="filter('annual')">Annual</button>
+            <button class="filter-button project_button" [class.active]="galleryFilter == 'drday'" (click)="filter('drday')">Dr Day</button>
+            <button class="filter-button project_button" [class.active]="galleryFilter == 'eggday'" (click)="filter('eggday')">Egg Day</button>
+        </div>
+        <div class="row">
+            <div class="isotopeSelector col-lg-3 col-sm-6" *ngFor="let image of Images">
+                <div class="overlay">
+                    <div class="border-portfolio">
+                        <a href="javascript:void(0)">
+                            <div class="overlay-background" (click)="openImage(image)">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </div>
+                            <img [src]="image.modal.img" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ks-modal-gallery [id]="200" 
+        [modalImages]="Images"
+        [plainGalleryConfig]="GalleryConfig" 
+        [buttonsConfig]="ButtonsConfig">
+    </ks-modal-gallery>
+</section>
+<!-- Our Project End -->
