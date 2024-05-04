@@ -1,5 +1,5 @@
-<app-header-four [sticky]="true"></app-header-four>
-
+<app-header-three [sticky]="true"></app-header-three>
+<marquee *ngIf="birthdayUsers.length"> Happy Birthday {{birthdayUsers.join(', ')}}</marquee>
 <!-- Home slider start-->
 <section class="p-0 light-layout">
   <app-slider 

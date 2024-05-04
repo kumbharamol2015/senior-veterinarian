@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ProductSlider } from '../../shared/data/slider';
 import { Product } from '../../shared/classes/product';
 import { ProductService } from '../../shared/services/product.service';
+import { UsersService } from 'src/app/shared/services/users.service';
 
 @Component({
   selector: 'app-pets',
@@ -13,23 +14,50 @@ export class PetsComponent implements OnInit, OnDestroy {
   public themeLogo: string = 'assets/images/icon/logo-13.png'; // Change Logo
   
   public products: Product[] = [];
+  birthdayUsers = []
   
   public ProductSliderConfig: any = ProductSlider;
 
-  constructor(public productService: ProductService) {
+  constructor(public productService: ProductService,  private usresService: UsersService) {
     this.productService.getProducts.subscribe(response => {
       this.products = response.filter(item => item.type == 'pets');
     });
+    this.usresService.getAllUsers().subscribe((data: any) => {
+      this.isBirthdayToday(data);
+    });
+  }
+
+  isBirthdayToday(data): any {
+    data.forEach((element) => {
+      console.log(element)
+      const userBirthday = new Date(element.birthdate);
+      const today = new Date();
+      if (
+        userBirthday.getMonth() === today.getMonth() &&
+        userBirthday.getDate() === today.getDate()
+      ) {
+        this.birthdayUsers.push(element.name)
+      }
+    });
+
   }
 
   public sliders = [{
-    title: 'We Believe',
-    subTitle: 'that being a veterinarian is more than just a job.',
-    image: 'assets/images/slider/17.jpg'
+    // title: 'We Believe',
+    // subTitle: 'that being a veterinarian is more than just a job.',
+    image: 'assets/images/slider/1.jpg'
   }, {
-    title: 'We Believe',
-    subTitle: 'that being a veterinarian is more than just a job.',
-    image: 'assets/images/slider/18.jpg'
+    // title: 'We Believe',
+    // subTitle: 'that being a veterinarian is more than just a job.',
+    image: 'assets/images/slider/19.jpg'
+  }, {
+    // title: 'We Believe',
+    // subTitle: 'that being a veterinarian is more than just a job.',
+    image: 'assets/images/slider/19.jpg'
+  }, {
+    // title: 'We Believe',
+    // subTitle: 'that being a veterinarian is more than just a job.',
+    image: 'assets/images/slider/19.jpg'
   }];
 
   // Logo
