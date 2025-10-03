@@ -39,6 +39,9 @@ export class NavService {
 		{
 			title: 'about-us', type: 'link', path: '/pages/aboutus',
 		},
+		// {
+		// 	title: 'Member Corner', type: 'link',  path: '/pages/member-corner'
+		// },
 		{
 			title: 'Gallary', type: 'link',  path: '/pages/portfolio/grid/four'
 		},
@@ -48,6 +51,15 @@ export class NavService {
 				{
 					title: 'Download Forms', type: 'link', path:'/pages/work-training', active: false
 				},
+				{
+					title: 'Award Details', type: 'link', path:'/pages/award-details', active: false
+				},
+				{
+					title: 'Member List', type: 'link', path:'/pages/member-list', active: false
+				},
+				// {
+				// 	title: 'User Details', type: 'link', path:'/pages/user-details', active: false
+				// }
 			]
 		},
 		{
@@ -271,6 +283,12 @@ export class NavService {
 			{
 				title: 'Download Forms', type: 'link', path:'/pages/work-training', active: false
 			},
+			{
+				title: 'Award Details', type: 'link', path:'/pages/award-details', active: false
+			},
+			{
+				title: 'User Details', type: 'link', path:'/pages/user-details', active: false
+			}
 		]
 	},
 	{

@@ -54,6 +54,8 @@ import { TapToTopComponent } from './components/tap-to-top/tap-to-top.component'
 // Pipes
 import { DiscountPipe } from './pipes/discount.pipe';
 import { SidebarSocialIconComponent } from './components/sidebar-social-icon/sidebar-social-icon.component';
+import { QuickViewUsersComponent } from './components/modal/quick-view-users/quick-view-users.component';
+import { QuickViewAwardsComponent } from './components/modal/quick-view-awards/quick-view-awards.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +90,9 @@ import { SidebarSocialIconComponent } from './components/sidebar-social-icon/sid
     LayoutBoxComponent,
     TapToTopComponent,
     DiscountPipe,
-    SidebarSocialIconComponent
+    SidebarSocialIconComponent,
+    QuickViewUsersComponent,
+    QuickViewAwardsComponent
   ],
   imports: [
     CommonModule,
@@ -142,7 +146,9 @@ import { SidebarSocialIconComponent } from './components/sidebar-social-icon/sid
     LayoutBoxComponent,
     TapToTopComponent,
     DiscountPipe,
-    SidebarSocialIconComponent
+    SidebarSocialIconComponent,
+    QuickViewUsersComponent,
+    QuickViewAwardsComponent
   ]
 })
 export class SharedModule { }

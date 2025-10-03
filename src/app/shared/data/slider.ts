@@ -3,6 +3,8 @@ export let HomeSlider: any = {
     loop: true,
     nav: true,
     dots: false,
+    autoplay: true, // Add autoplay option
+    autoplayTimeout: 3000, 
     navContainerClass: 'owl-nav',
     navClass: [ 'owl-prev', 'owl-next' ],
     navText: [ '<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>' ],
@@ -189,9 +191,11 @@ export let  CompareSlider: any = {
 
 // Product Slider
 export let ProductSlider: any = {
-    loop: false,
-    dots: false,
-    navSpeed: 300,
+    loop: true,
+    dots: true,
+    navSpeed: 100,
+    autoplay: true, // Add autoplay option
+    autoplayTimeout: 100, // Adjust autoplay timeout as needed (e.g., 3000 milliseconds)
     responsive: {
         991: {
             items: 4
