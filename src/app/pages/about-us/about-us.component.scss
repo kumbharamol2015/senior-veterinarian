@@ -15,4 +15,50 @@
             }
         }
     }
+    .about-info{
+        h5{
+            color: #1e81b0;
+            margin-bottom: 20px;
+        }
+        h3{
+            color: #ff4c3b;
+        }
+        div{
+            margin-bottom: 8px;
+            span{
+                color: #ff4c3b;
+            }
+        }
+        p{
+            margin-bottom: 12px;
+        }
+        .about-obj{
+            span{
+                color: #ff4c3b;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            
+        }
+    }
+}
+.custom-bullet-list {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 20px; /* Add some left padding to position the bullets */
+}
+
+.custom-bullet-list li {
+    position: relative; /* Needed for the pseudo-element positioning */
+    margin-bottom: 10px; /* Space between items */
+    padding-left: 20px; /* Space between bullet and text */
+}
+
+.custom-bullet-list li::before {
+    content: "\2022"; /* Unicode for bullet character or use any custom character */
+    color: #ff0000; /* Custom bullet color */
+    font-size: 20px; /* Bullet size */
+    position: absolute; /* Position relative to li */
+    left: 0; /* Position it to the left of the text */
+    top: 0; /* Align it with the top of the text */
+    line-height: 1; /* Adjust line height */
 }
