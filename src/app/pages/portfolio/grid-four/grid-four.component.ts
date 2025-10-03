@@ -45,26 +45,77 @@ export class GridFourComponent implements OnInit {
     new Image(1, { img: 'assets/images/gallary/eggday/4.jpg' }),
   ]
 
-  public FashionImage = [
-    new Image(1, { img: 'assets/images/portfolio/grid/1.jpg' })
+  public vrundawanCow = [
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/1.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/2.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/5.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/6.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/7.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/8.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/9.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/10.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/11.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/12.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/13.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/14.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/15.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/16.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/17.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/18.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/19.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/20.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/21.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/3.jpg' }),
+    new Image(1, { img: 'assets/images/gallary/vrundawanCow/4.jpg' }),
   ]
 
-  public BagImages = [
-    new Image(3, { img: 'assets/images/portfolio/grid/3.jpg' }),
-    new Image(4, { img: 'assets/images/portfolio/grid/4.jpg' }),
-    new Image(7, { img: 'assets/images/portfolio/grid/7.jpg' }),
-  ];
-  
-  public ShoesImages = [
-    new Image(2, { img: 'assets/images/portfolio/grid/2.jpg' }),
-    new Image(8, { img: 'assets/images/portfolio/grid/8.jpg' })
-  ]
-  
-  public WatchImages = [
-    new Image(5, { img: 'assets/images/portfolio/grid/5.jpg' }),
-    new Image(6, { img: 'assets/images/portfolio/grid/6.jpg' })
-  ]
+  public gauravpurskar = [
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/1.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/2.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/3.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/4.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/5.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/6.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/7.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/8.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/9.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/10.jpeg' }),
 
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/11.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/12.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/13.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/14.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/15.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/16.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/17.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/18.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/19.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/20.jpeg' }),
+
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/21.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/22.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/23.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/24.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/25.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/26.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/27.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/28.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/29.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/30.jpeg' }),
+
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/31.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/32.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/33.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/34.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/35.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/36.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/37.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/38.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/39.jpeg' }),
+    new Image(1, { img: 'assets/images/gallary/gauravpurskar/40.jpeg' }),
+  ]
+  
+  
   constructor() { }
 
   ngOnInit(): void {
@@ -89,11 +140,11 @@ export class GridFourComponent implements OnInit {
       this.Images = this.drDay
     } else if(term == 'eggday') {
       this.Images = this.eggDay
-    } else if(term == 'shoes') {
-      this.Images = this.ShoesImages
-    } else if(term == 'watch') {
-      this.Images = this.WatchImages
-    }
+    } else if(term == 'vrundawanCow') {
+      this.Images = this.vrundawanCow
+    } else if(term == 'gauravpurskar') {
+      this.Images = this.gauravpurskar
+    } 
 
     this.galleryFilter = term
   }

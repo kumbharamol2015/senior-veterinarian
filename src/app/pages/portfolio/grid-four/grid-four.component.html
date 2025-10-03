@@ -7,6 +7,8 @@
             <button class="filter-button project_button" [class.active]="galleryFilter == 'annual'" (click)="filter('annual')">Annual</button>
             <button class="filter-button project_button" [class.active]="galleryFilter == 'drday'" (click)="filter('drday')">Dr Day</button>
             <button class="filter-button project_button" [class.active]="galleryFilter == 'eggday'" (click)="filter('eggday')">Egg Day</button>
+            <button class="filter-button project_button" [class.active]="galleryFilter == 'vrundawanCow'" (click)="filter('vrundawanCow')">Vrundawan Cow भुगांव</button>
+            <button class="filter-button project_button" [class.active]="galleryFilter == 'gauravpurskar'" (click)="filter('gauravpurskar')">गौरव पुरस्कार 2024</button>
         </div>
         <div class="row">
             <div class="isotopeSelector col-lg-3 col-sm-6" *ngFor="let image of Images">

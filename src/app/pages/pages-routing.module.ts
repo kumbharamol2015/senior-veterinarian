@@ -36,6 +36,10 @@ import { MasonryFullWidthComponent } from './portfolio/masonry-full-width/masonr
 import { WorkTrainingComponent } from './work-training/work-training.component';
 import { CeremonyComponent } from './ceremony/ceremony.component';
 import { CeremonyDetailsComponent } from './ceremony-details/ceremony-details.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { AwardDetailsComponent } from './award-details/award-details.component';
+import { MemberCornerComponent } from './member-corner/member-corner.component';
+import { MemberListComponent } from './member-list/member-list.component';
 
 const routes: Routes = [
   { 
@@ -177,6 +181,22 @@ const routes: Routes = [
   { 
     path: 'ceremony-details', 
     component: CeremonyDetailsComponent 
+  },
+  { 
+    path: 'user-details', 
+    component: UserDetailsComponent 
+  },
+  { 
+    path: 'award-details', 
+    component: AwardDetailsComponent 
+  },
+  { 
+    path: 'member-list', 
+    component: MemberListComponent 
+  },
+  { 
+    path: 'member-corner', 
+    component: MemberCornerComponent 
   },
 ];
 

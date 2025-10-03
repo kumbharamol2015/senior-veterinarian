@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { GalleryModule } from '@ks89/angular-modal-gallery';
 import { SharedModule } from '../shared/shared.module';
 import { PagesRoutingModule } from './pages-routing.module';
@@ -44,6 +44,10 @@ import { CeremonyComponent } from './ceremony/ceremony.component';
 import { WorkTrainingDetailsComponent } from './work-training-details/work-training-details.component';
 import { CeremonyDetailsComponent } from './ceremony-details/ceremony-details.component';
 import { StockInventoryComponent } from '../shop/product/widgets/stock-inventory/stock-inventory.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { AwardDetailsComponent } from './award-details/award-details.component';
+import { MemberCornerComponent } from './member-corner/member-corner.component';
+import { MemberListComponent } from './member-list/member-list.component';
 
 @NgModule({
   declarations: [
@@ -84,12 +88,17 @@ import { StockInventoryComponent } from '../shop/product/widgets/stock-inventory
     WorkTrainingDetailsComponent,
     CeremonyDetailsComponent,
     StockInventoryComponent,
+    UserDetailsComponent,
+    AwardDetailsComponent,
+    MemberCornerComponent,
+    MemberListComponent,
   ],
   imports: [
     CommonModule,
     GalleryModule.forRoot(),
     SharedModule,
     PagesRoutingModule,
-  ]
+  ],
+  providers: [DatePipe],
 })
 export class PagesModule { }

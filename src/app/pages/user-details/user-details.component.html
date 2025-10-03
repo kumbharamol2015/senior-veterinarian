@@ -1,0 +1,41 @@
+<app-breadcrumb [title]="'User Details'" [breadcrumb]="'User Details'"></app-breadcrumb>
+<!-- section start -->
+<section class="cart-section section-b-space">
+    <div class="container">
+        <div class="col-sm-12 empty-cart-cls text-center" *ngIf="!users.length">
+            <img src="assets/images/icon-empty-cart.png" class="img-fluid mb-4">
+            <h3><strong>User List is Empty</strong></h3>
+        </div>
+        <div class="row" *ngIf="users.length">
+            <div class="col-sm-12">
+                <table class="table cart-table table-responsive-xs">
+                    <thead>
+                        <tr class="table-head">
+                            <th scope="col">User name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Mobile No</th>
+                            <th scope="col">Designation</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let user of users">
+                        <tr>
+                            <td>{{ user.name | titlecase }}</td>
+                            <td>{{ user.email }}</td>
+                            <td>{{ user.mobileNo }}</td>
+                            <td>{{ user.designation }}</td>
+                            <td>{{ user.address }}</td>
+                            <td>  <a href="javascript:void(0)" title="Quick View" (click)="QuickViewUsers.openModal(user)">
+                                <i class="ti-search" aria-hidden="true"></i>
+                              </a></td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<app-quick-view-users #quickViewUsers  [users]="users"></app-quick-view-users>
+<!-- section end -->
