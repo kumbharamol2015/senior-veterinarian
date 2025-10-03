@@ -1,0 +1,28 @@
+<ng-template class="theme-modal" #quickViewUsers let-modal>
+    <div class="modal-content quick-view-modal">
+        <div class="modal-body">
+            <button type="button" class="close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="row">
+                <div class="col-lg-6  col-xs-12">
+                    <div class="quick-view-img">
+                        <img [src]="users.images.src" [alt]="users.images.src.alt" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 rtl-text">
+                    <div class="product-right">
+                        <h2>{{ users.name  | titlecase }}</h2>
+                        <h4>{{ users.mobileNo }}</h4>
+                        <h4>{{ users.designation }}</h4>
+                        <h4>{{ users.email }}</h4>
+                    </div>
+                    <div class="border-product">
+                        <h6 class="product-title">Address</h6>
+                        <p>{{ users.address }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

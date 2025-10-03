@@ -1,0 +1,22 @@
+<ng-template class="theme-modal" #quickViewAwards let-modal>
+    <div class="modal-content quick-view-modal">
+        <div class="modal-body">
+            <button type="button" class="close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="row">
+                <div class="col-lg-6  col-xs-12">
+                    <div class="quick-view-img">
+                        <img [src]="awards.images.src" [alt]="awards.images.src.alt" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 rtl-text">
+                    <div class="product-right">
+                        <h2>{{ awards.name  | titlecase }}</h2>
+                        <h4>{{ awards.details }}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>
