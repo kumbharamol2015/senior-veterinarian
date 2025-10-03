@@ -25,6 +25,7 @@ import { BlogComponent } from './widgets/blog/blog.component';
 import { LogoComponent } from './widgets/logo/logo.component';
 import { ServicesComponent } from './widgets/services/services.component';
 import { CollectionComponent } from './widgets/collection/collection.component';
+import { GalleryModule } from '@ks89/angular-modal-gallery';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { CollectionComponent } from './widgets/collection/collection.component';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    SharedModule
+    SharedModule,
+    GalleryModule.forRoot(),
   ]
 })
 export class HomeModule { }

@@ -2,14 +2,53 @@
 <marquee *ngIf="birthdayUsers.length"> Happy Birthday {{birthdayUsers.join(', ')}}</marquee>
 <!-- Home slider start-->
 <section class="p-0 light-layout">
-  <app-slider 
-    [sliders]="sliders" 
-    [textClass]="'text-center'"
-    [category]="'pets'"
-    [buttonText]="'shop now'"> 
+  <app-slider [sliders]="sliders" [textClass]="'text-center'" [category]="'pets'" [buttonText]="'shop now'">
   </app-slider>
 </section>
 <!-- Home slider End -->
+
+<!-- <section class="lookbook section-b-space">
+  <div class="container">
+    <div class="title1">
+      <h2>सन्मानपत्र</h2>
+      <hr role="tournament6">
+    </div>
+    <div class="row">
+
+      <div class="col-md-6" *ngFor="let award of awards">
+        <div class="lookbook-block">
+          <img src="{{award.images.src}}" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- Our Project Start -->
+<!-- <section class="portfolio-section grid-portfolio">
+  <div class="container">
+      <div class="row">
+          <div class="isotopeSelector col-sm-6" *ngFor="let image of Images">
+              <div class="overlay">
+                  <div class="border-portfolio">
+                      <a href="javascript:void(0)">
+                           <div class="overlay-background" (click)="openImage(image)">
+                              <i class="fa fa-plus" aria-hidden="true"></i>
+                          </div>
+                          <img [src]="image.modal.img" class="img-fluid">
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <ks-modal-gallery [id]="200" 
+      [modalImages]="Images"
+      [plainGalleryConfig]="GalleryConfig" 
+      [buttonsConfig]="ButtonsConfig">
+  </ks-modal-gallery>
+</section> -->
+<!-- Our Project End -->
 
 <!--  logo section start-->
 <!-- <section class="section-b-space">
@@ -59,7 +98,7 @@
 <!-- banner section End -->
 
 <!-- Product slider -->
-<section class="section-b-space j-box pets-box light-layout" style="margin-top: -10px;">
+<!-- <section class="section-b-space j-box pets-box light-layout" style="margin-top: -10px;">
   <div class="container">
       <div class="row">
           <div class="col">
@@ -71,22 +110,10 @@
                   </span>
                   <hr role="tournament6">
               </div>
-              <!-- <owl-carousel-o class="product-4 product-m no-arrow" [options]="ProductSliderConfig">
-                <ng-container *ngFor="let product of products | slice:0:16">
-                  <ng-template carouselSlide>
-                    <div class="product-box">
-                      <app-product-box-one 
-                        [product]="product"
-                        [currency]="productService?.Currency">    
-                      </app-product-box-one>
-                    </div>
-                  </ng-template>
-                </ng-container>
-              </owl-carousel-o>               -->
           </div>
       </div>
   </div>
-</section>
+</section> -->
 <!-- Product slider end -->
 
 <!-- Parallax banner -->
@@ -118,8 +145,42 @@
 </section> -->
 <!-- Parallax banner end -->
 
+<!-- home banner start -->
+<!-- <div class="container banner-slider">
+  <div class="row">
+    <div class="col">
+      <div class="title1 section-t-space">
+        <h2 class="title-inner1">EVENTS</h2>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-6">
+          <img src="assets/images/events/event1.jpg" class="img-fluid height-banner" alt="event1">
+          <div class="blog-details">
+            <a>
+              <p>Webinar 1 </p>
+            </a>
+            <h6> Expanding opportunities and prospectus for veterinarians</h6>
+          </div>
+      </div>
+
+      <div class="col-md-6">
+          <img src="assets/images/events/event2.jpg" class="img-fluid height-banner" alt="event2">
+          <div class="blog-details">
+            <a>
+              <p>Webinar 2</p>
+            </a>
+            <h6>Sheep and Goat Sector in India - Present scenario
+              Need of Intensive Farming</h6>
+          </div>
+      </div>
+  </div>
+</div> -->
+<!-- home banner end  -->
+
 <!-- blog section start-->
-<section class="section-b-space blog p-t-0 blog_box">
+<!-- <section class="section-b-space blog p-t-1 blog_box">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -135,8 +196,51 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- blog section End -->
+
+<!---->
+<!-- <section class="section-b-space">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="title1 ">
+          <h2 class="title-inner1">ACTIVITIES</h2>
+        </div>
+      </div>
+    </div>
+      <div class="row">
+          <div class="col-lg-3">
+              <div class="dashboard-left">
+                  <div class="block-content">
+                      <ul>
+                          <li class="active" (click)="showWebinarInfo(1)" [class.active]="selectedWebinar === 1"><a href="javascript:void(0)">Webinar 1</a></li>
+                          <li (click)="showWebinarInfo(2)" [class.active]="selectedWebinar === 2"><a href="javascript:void(0)">Webinar 2</a></li>
+                          <li (click)="showWebinarInfo(3)" [class.active]="selectedWebinar === 3"><a href="javascript:void(0)">Technical Seminar</a></li>
+                          <li (click)="showWebinarInfo(4)" [class.active]="selectedWebinar === 4"><a href="javascript:void(0)">Work Camp</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-9">
+              <div class="dashboard-right">
+                  <div class="dashboard">
+                      <div class="page-title">
+                        <h2>{{ webinarTitle }}</h2>
+                        <h4>{{ webinarSubtitle }}</h4>
+                      </div>
+                      <div class="welcome-msg">
+                        <p>{{ webinarDescription }}</p>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section> -->
+<!---->
+
+
 
 <!-- Cart Open To Left Side-->
 <!-- <app-cart-variation [direction]="'left'"></app-cart-variation>  -->
