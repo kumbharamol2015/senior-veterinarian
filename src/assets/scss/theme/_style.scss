@@ -663,7 +663,7 @@ button {
     }
     .title-inner1 {
         padding-bottom: 15px;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         position: relative;
         &:after {
             position: absolute;
@@ -1499,8 +1499,9 @@ header {
     .home {
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
-        height: 75vh;
+        background-position-y: center;
+        height: 100%;
+        width: 100%;
     }
     .slider-contain {
         width: 100%;
@@ -8100,19 +8101,24 @@ footer {
         padding-bottom: 20px;
     }
     .block-content {
-        border: 1px solid #ddd;
-        padding: 15px;
+        border: none;
+        padding: 12px 0;
+        background-color: #fafafa;
+        border-radius: 5px;
+        overflow: hidden;
         ul li {
             display: flex;
             transition: all 0.5s ease;
+            padding: 8px 20px;
+            font-size: 15px;
             &.active {
                 color: var(--theme-deafult);
+                border-right: 2px solid var(--theme-deafult);
                 a {
                     color: var(--theme-deafult);
                 }
             }
             &:before {
-                content: '\f105';
                 display: inline-block;
                 font-family: FontAwesome;
                 font-style: normal;
@@ -8128,11 +8134,11 @@ footer {
             }
             &:hover {
                 a {
-                    color: #ff0000;
+                    color: var(--theme-deafult);
                     transition: all 0.5s ease;
                 }
                 padding-left: 10px;
-                color: #ff0000;
+                color: var(--theme-deafult);
                 transition: all 0.5s ease;
             }
         }
@@ -8154,7 +8160,6 @@ footer {
         line-height: 20px;
     }
     .dashboard {
-        border: 1px solid #ddd;
         padding: 30px;
         .page-title h2 {
             font-size: 22px;
@@ -11428,10 +11433,10 @@ body.rtl {
         float: left;
         width: 100%;
         position: relative;
-        animation: zoomIn 0.4s linear;
+        // animation: zoomIn 0.4s linear;
         .overlay {
             position: relative;
-            border: 1px solid $round-border;
+            // border: 1px solid $round-border;
         }
         img {
             width: 100%;

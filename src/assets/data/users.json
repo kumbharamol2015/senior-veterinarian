@@ -1,0 +1,26 @@
+[
+    {
+    "images": {
+      "src": "assets/images/team/1.jpg",
+      "alt": "Dr"
+        },
+    "name": "Amol Kumbhar",
+    "email": "kumbharamol22@gmailcom",
+    "designation": "Developer",
+    "mobileNo": "9021121050",
+    "birthdate": "05-07-1089",
+    "address": "Pune"
+    },
+    {
+    "images": {
+      "src": "assets/images/team/1.jpg",
+      "alt": "Dr"
+        },
+    "name": "Bapusaheb Nalawade",
+    "email": "bapu@gmailcom",
+    "designation": "Developer",
+    "mobileNo": "1231231231",
+    "birthdate": "04-07-1089",
+    "address": "Aurangabad"
+    }
+]
